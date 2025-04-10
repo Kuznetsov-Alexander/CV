@@ -1,6 +1,6 @@
 import cv2
 
-path = r'C:\Users\HONOR\Downloads\main\Учеба\pet_projects\CV\CV\video\video.mp4'
+path = r'C:\Users\HONOR\Downloads\main\Learn\pet_projects\CV\CV\video\video.mp4'
 cap = cv2.VideoCapture(path)
 if not cap.isOpened():
     print("Ошибка: не удалось открыть видеофайл")

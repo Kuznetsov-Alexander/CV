@@ -1,6 +1,6 @@
 import cv2
 
-path = r'C:\Users\HONOR\Downloads\main\Учеба\pet_projects\CV\CV\images\photo.jpg'
+path = r'C:\Users\HONOR\Downloads\main\Learn\pet_projects\CV\CV\images\photo.jpg'
 img = cv2.imread(path, cv2.IMREAD_UNCHANGED) # загружает изображение со всеми исходными данными включая прозрачность
 
 cv2.imshow('Мое окно', img)
