@@ -17,8 +17,8 @@ while True:
     ret, frame = cap.read()
     if not(ret):
         break
-    resized_frame = cv2.resize(frame, (width // 2, height // 10)) # изменяем размер окна
-    cv2.imshow('frame', resized_frame)
+    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) # изменяем цвет видео
+    cv2.imshow('frame', gray_frame)
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
