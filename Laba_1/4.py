@@ -12,8 +12,8 @@ def read_and_write_video():
     h = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
     fps = video.get(cv2.CAP_PROP_FPS)
 
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')  # Кодек для AVI
-    video_writer = cv2.VideoWriter("output.avi", fourcc, fps, (w, h))  # Изменил расширение на .avi
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Кодек для MP4
+    video_writer = cv2.VideoWriter("output.mp4", fourcc, fps, (w, h))
 
     while True:
         ok, img = video.read()
