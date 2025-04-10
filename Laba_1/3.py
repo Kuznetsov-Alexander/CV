@@ -17,8 +17,8 @@ while True:
     ret, frame = cap.read()
     if not(ret):
         break
-    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) # изменяем цвет видео
-    cv2.imshow('frame', gray_frame)
+    hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV) # изменяем цвет видео hsv
+    cv2.imshow('frame', hsv_frame)
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
