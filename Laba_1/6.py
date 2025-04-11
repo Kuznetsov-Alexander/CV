@@ -1,11 +1,11 @@
 import cv2
 
 
-#Подключаем камеру
+
 cap = cv2.VideoCapture(0)
 
-# Параметры креста
-cross_size = 80      # Длина лучей
+# Параметры
+cross_size = 80      # Длина
 thickness = 20       # Толщина прямоугольников
 color = (0, 0, 255)  # Красный цвет
 line_thickness = 2    # Толщина линий
