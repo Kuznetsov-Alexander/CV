@@ -55,8 +55,8 @@ while True:
             cy = int(M['m01'] / M['m00']) # M['m10'], M['m01'] — моменты первого порядка, используемые для расчёта центра.
             cv2.circle(frame, (cx, cy), 5, (0, 255, 0), -1)
 
-    # Отображение результатов
-    cv2.imshow('Threshold', cleaned)
+
+    cv2.imshow('', cleaned)
     cv2.imshow('Tracking', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
