@@ -3,7 +3,7 @@ import urllib.request
 import numpy as np
 
 # URL камеры телефона
-url = "http://192.168.0.101:8080/shot.jpg"
+url = "http://172.20.10.6:8080/shot.jpg"
 
 while True:
     # Получаем изображение с телефона
